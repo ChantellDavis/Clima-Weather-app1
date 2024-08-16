@@ -28,7 +28,7 @@ function displayTemp(response) {
 function updateTime() {
  let currentDate = document.querySelector("#current-Date");
 let timeElement = moment();
-currentDate.innerHTML = timeElement.format(`dddd,  h:m a `);   
+currentDate.innerHTML = timeElement.format(`dddd,  h:mm a `);   
 };
 
 setInterval(updateTime);
