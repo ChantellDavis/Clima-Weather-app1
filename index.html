@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>climaclima</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="siteTitle">Clima <span class="siteTitleTwo">Clima</span></h1>
+    </header>
+    <main class="mainBox">
+      <form class="searchForm" id="search-Form">
+        <input
+          class="searchFormInput"
+          type="search"
+          placeholder="enter a city..."
+          autocomplete="off"
+          autofocus="on"
+          id="search-Form-Input"
+        />
+        <input class="searchFormButton" type="submit" name="search" />
+      </form>
+      <h2 class="currentCity" id="current-City">Paris</h2>
+      <p class="currentDate" id="current-Date">Monday 8:44</p>
+      <div class="data" id="data">
+        <p class="weatherCondition" id="weather-Condition">Sunny</p>
+        <p class="weatherConditionLabel" id="weather-Condition-Label">
+          Humidity:
+          <span class="weatherConditionData" id="weather-Condition-Data"></span>
+        </p>
+        <p class="weatherConditionLabelTwo">
+          Wind:
+          <span
+            class="weatherConditionDataTwo"
+            id="weather-Condition-Data-Two"
+          ></span>
+        </p>
+      </div>
+      <div>
+        <div class="icon" id="icon"></div>
+        <span id="current-Temp" class="currentTemp">75</span>
+        <span class="degree">°F</span>
+      </div>
+      <div class="weather-Forecast-Box" id="weather-Forecast-Box"></div>
+    </main>
+    <footer>
+      This project was coded by
+      <a href="https://github.com/" target="_blank">Chantell Davis</a> is
+      <a
+        href="https://github.com/ChantellDavis/Clima-weather-app"
+        target="_blank"
+        >open-sourced on GitHub</a
+      >, and hosted on
+      <a
+        href="https://app.netlify.com/sites/climaclima/deploys/663971424120736547b092b6"
+        target="_blank"
+        >Netlify</a
+      >
+    </footer>
+    <script src="/src/index.js"></script>
+  </body>
+</html>
